@@ -9,33 +9,98 @@
 //   correct      -> index of the correct answer (0 = first, 1 = second, ...)
 const questions = [
     {
-        statement: "Pergunta de exemplo 1?",
+        statement: "O que significa a sigla PO?",
         alternatives: [
-            "Alternativa A",
-            "Alternativa B",
-            "Alternativa C"
+            "Process Owner",
+            "Project Operator",
+            "Product Owner"
         ],
-        correct: 0
+        correct: 3
     },
     {
-        statement: "Pergunta de exemplo 2?",
+        statement: "O que é um 'Épico' no Azure DevOps?",
         alternatives: [
-            "Alternativa A",
-            "Alternativa B",
-            "Alternativa C",
-            "Alternativa D"
+            "Um bug crítico registrado no sistema",
+            "Agrupamento macro de funcionalidades ou temas do projeto",
+            "Um caso de teste detalhado",
+        ],
+        correct: 1
+    },
+    {
+        statement: "O que é Homologação?",
+        alternatives: [
+            "Criação de histórias no Azure DevOps",
+            "Registro de bugs encontrados em testes",
+            "Validação da solução antes da subida para produção",
         ],
         correct: 2
     },
     {
-        statement: "Pergunta de exemplo 3?",
+        statement: "O que deve conter obrigatoriamente um card/história no Azure DevOps?",
         alternatives: [
-            "Alternativa A",
-            "Alternativa B",
-            "Alternativa C"
+            "Nome, contexto, regras de negócio e critérios de aceite",
+            "Apenas o nome da funcionalidade e o responsável",
+            "Somente os critérios de aceite e o prazo de entrega",
+        ],
+        correct: 0
+    },
+    {
+        statement: "Quando uma história pode seguir para desenvolvimento?",
+        alternatives: [
+            "Assim que for criada pela equipe de processos",
+            "Após validação do PO",
+            "Após o refinamento técnico do time de desenvolvimento",
         ],
         correct: 1
-    }
+    },
+
+    {
+        statement: "O que significa o status 'Blocked' em um teste?",
+        alternatives:
+        [
+            "Teste executado com falha",
+            "Teste ainda não iniciado",
+            "Teste bloqueado por ausência de entrega, falha anterior ou dependência",
+        ],
+        correct: 2
+    },
+    {
+        statement: "O que deve conter um bug registrado no Azure DevOps?",
+        alternatives: [
+            "Apenas o título e o responsável pela correção",
+            "Nome, história relacionada, etapa da falha, resultado esperado, obtido e evidências",
+            "Somente as evidências e comentários explicativos",
+        ],
+        correct: 1
+    },
+    {
+        statement: "Qual é o fluxo correto de validação em QA?",
+        alternatives: [
+            "PO testa primeiro, depois o QA interno valida ",
+            "O time de desenvolvimento entrega, QA interno valida, depois o PO executa os testes",
+            "A área de negócio valida antes do QA interno"
+        ],
+        correct: 1
+    },
+    {
+        statement: "O que é necessário antes de iniciar o registro no Azure DevOps?",
+        alternatives: [
+            "Apenas a especificação funcional elaborada",
+            "Somente as regras de negócio mapeadas",
+            "Reuniões de entendimento, fluxograma, especificação funcional e regras de negócio mapeadas"
+        ],
+        correct: 2
+    },
+    {
+        statement: "O que significa o status 'Passed' em um teste?",
+        alternatives: [
+            "Teste em execução",
+            "Teste executado e aprovado",
+            "Teste bloqueado por dependência técnica",
+        ],
+        correct: 1
+    },
+
 ];
 
 const bau = ['1', '2']
