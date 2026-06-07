@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/style.css">
+
+    <script src="./src/scripts/script.js" defer></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <main id="start-screen">
+        <div class="content">
+            <h1>QUIZ</h1>
+            <h1>Equipe de Processos</h1>
+        </div>
+
+        <div class="informations">
+            <div class="card">
+                <img src="./src/assets/interrogation.svg" alt="icone de perguntas">
+                <p>Perguntas</p>
+            </div>
+            <div class="card">
+                <img src="./src/assets/clock.svg" alt="icone de reloginho">
+                <p>10 Minutos</p>
+            </div>
+            <div class="card">
+                <img src="./src/assets/fire.svg" alt="icone de fogo">
+                <p>Nivel médio</p>
+            </div>
+        </div>
+
+        <button type="button" class="card" id="play-button">
+            <img src="./src/assets/play.svg" alt="icone de play">
+            <p>Jogar agora</p>
+        </button>
+
+        <p>Leva menos de 10 minutos <img src="./src/assets/ray.svg" alt="icone de raio"></p>
+    </main>
+
+    <section class="questionary hidden" id="quiz-screen">
+        <div class="card-question">
+            <div class="complete-bar">
+                <p>Pergunta <span id="current-question">1</span> de <span id="total-questions">10</span></p>
+                <div class="complete">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+            </div>
+
+            <p id="question-text">Por que feijões são ruins?</p>
+
+            <div class="answers" id="answers"></div>
+        </div>
+
+        <button type="button" id="next-button">Próxima <img src="./src/assets/arrow.svg" alt="icone de seta"></button>
+    </section>
+
+    <section class="results hidden" id="results-screen">
+        <div class="result">
+            <h1 id="result-number">8</h1>
+            <p>Você acertou <span id="result-hits">8</span> de <span id="result-total">10</span> perguntas, parabéns!</p>
+        </div>
+
+        <div class="kpis-cards">
+            <div class="kpi-card">
+                <p>Acertos</p>
+                <span id="kpi-hits">8</span>
+            </div>
+
+            <div class="kpi-card">
+                <p>Erros</p>
+                <span id="kpi-misses">2</span>
+            </div>
+
+            <div class="kpi-card">
+                <p>Pontuação</p>
+                <span id="kpi-score">80%</span>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button type="button" id="answer-key-button">Ver gabarito</button>
+            <button type="button" id="restart-button">Jogar novamente</button>
+        </div>
+    </section>
+</body>
+</html>
