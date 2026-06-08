@@ -15,7 +15,7 @@ const questions = [
             "Project Operator",
             "Product Owner"
         ],
-        correct: 3
+        correct: 2
     },
     {
         statement: "O que é um 'Épico' no Azure DevOps?",
